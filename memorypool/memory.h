@@ -5,7 +5,9 @@
 #ifndef APUE_MEMORY_H
 #define APUE_MEMORY_H
 
-#endif //APUE_MEMORY_H
+#include <stddef.h>
+
+
 
 
 typedef struct yblock {
@@ -20,9 +22,11 @@ static yblock* free_list = NULL;//free block list
 
 void yinit(int size,int block_size);
 
+
 void* ymalloc() ;
 
 void yfree(int *arr);
 
 
 void ydestory();
+#endif //APUE_MEMORY_H

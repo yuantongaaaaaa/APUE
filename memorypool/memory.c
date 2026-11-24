@@ -3,7 +3,7 @@
 //
 #include <stdlib.h>
 #include <stdio.h>
-#include <memory.h>
+#include "memory.h"
 
 
 void yinit(int size,int blocksize) {
